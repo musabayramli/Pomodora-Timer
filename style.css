@@ -94,10 +94,11 @@ header {
     width: 30vw;
     max-width: 200px;
     overflow: hidden;
+    will-change: transform, background-position;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background: linear-gradient(90deg, #f44336, #4caf50, #2196f3, #ffeb3b);
-    background-size: 200%;
-    animation: surfaceColorFlow 6s linear infinite, buttonShadowPulse 5s ease infinite;
+    background: linear-gradient(90deg, #f44336, #ff9800, #4caf50, #2196f3, #673ab7, #e91e63, #ffeb3b);
+    background-size: 300%;
+    animation: surfaceColorFlow 10s linear infinite alternate, buttonShadowPulse 5s ease infinite;
 }
 
 @keyframes surfaceColorFlow {
@@ -118,7 +119,7 @@ header {
 }
 
 .controls button:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); 
     color: white;
     background-color: transparent;
 }
